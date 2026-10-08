@@ -16,4 +16,10 @@ public class Book extends LibraryItem{
     public void readBook(){
         System.out.println("Reading: " + title + " by " + author + "... \nDone!");
     }
+
+    @Override
+    public String toString(){
+        String result = "Book: " + title +" by " + author + " (" + year + ") - " + pageCount + " pages";
+        return result;
+    }
 }
